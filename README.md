@@ -3,7 +3,7 @@ This (very limited) python script attempts to retrieve sheet music from musescor
 ## Installation
 Clone the repository and install necessary dependences (see `requirements.txt`).
 ## Usage
-`python3 main.py <musescore url> [nocleanup]`
+`python3 main.py <musescore url> [nocleanup]`  
 Produced files will be placed in `downloads/` within a subdirectory which will be printed to the terminal upon completion. By default, the only file preserved will be a combined pdf. If you would like to keep the svg and png files retrieved in the process, include the optional `nocleanup` flag.
 ## TODO
 - Support non-svg sheets
