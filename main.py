@@ -3,9 +3,8 @@ import requests
 import sys
 import os
 import glob
-import pigar
 from svglib.svglib import svg2rlg
-from reportlab.graphics import renderPDF, renderPM
+from reportlab.graphics import renderPM
 from fpdf import FPDF
 
 
