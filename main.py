@@ -37,7 +37,7 @@ def get_all_paths(path):
 
 def get_id():
     i0 = sys.argv[1].find("scores/")
-    return sys.argv[1][i0+8:]+'/'
+    return sys.argv[1][i0+7:]+'/'
 
 
 def grab_svg(paths):
