@@ -3,6 +3,7 @@ import requests
 import sys
 import os
 import glob
+import pigar
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPDF, renderPM
 from fpdf import FPDF
@@ -76,7 +77,11 @@ def cleanup():
 
 if __name__ == "__main__":
     if (len(sys.argv) < 2):
-        print("Usage: ./main.py <musescore url>")
+        print("Usage: ./main.py <musescore url> [nocleanup]")
     else:
+        print(get_file_path(sys.argv[1]))
         build_pdf(grab_svg(get_all_paths(get_file_path(sys.argv[1]))))
-        cleanup()
+        if len(sys.argv) == 2:
+            cleanup()
+        elif sys.argv[2] != 'nocleanup':
+            cleanup()
