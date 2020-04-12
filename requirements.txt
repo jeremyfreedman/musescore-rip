@@ -1,0 +1,4 @@
+fpdf == 1.7.2
+reportlab == 3.5.42
+requests == 2.18.4
+svglib == 1.0.0
