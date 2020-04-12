@@ -8,5 +8,6 @@ Produced files will be placed in `downloads/` within a subdirectory which will b
 ## TODO
 - Support non-svg sheets
 - Higher dpi on output (no idea why this is an issue, source files are vector graphics)
+- Better regex matching to organize files (currently just using basic string splitting)
 ## Legal
 This project is just something to occupy me during quarantine. This tool is not intended to commit copyright infringement and should only be used on sheets in the public domain.
